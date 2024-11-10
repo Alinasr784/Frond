@@ -1,0 +1,44 @@
+.card-n {
+  position: relative;
+  width: 180px;
+  height: 280px;
+  background: #f1f1f1;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+
+  .heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .info-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    color: #007bff;
+    cursor: pointer;
+  }
+
+  .price-info {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+  }
+}
