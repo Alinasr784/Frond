@@ -2,7 +2,7 @@ import React from "react";
 import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "./firebase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faUser , faTags , faFire , faCoins , faChild , faHeartPulse , faWheatAwnCircleExclamation , faHamburger,faBowlFood,faDrumSteelpan,faArrowRightFromBracket} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faUser , faTags , faFire , faCoins , faChild , faHeartPulse , faWheatAwnCircleExclamation , faHamburger,faBowlFood,faDrumSteelpan,faArrowRightFromBracket , faListDots, faHeart} from "@fortawesome/free-solid-svg-icons";
 import "../css/header.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -91,23 +91,26 @@ function Header() {
         />
         <ul className="dropdown-menu">
           <li>
-            <a className="dropdown-item" href="#">
+            <a className="dropdown-item" href="#" style={{display:"flex",alignItems:"center"}}>
+              <FontAwesomeIcon icon={faUser} style={{marginRight:"13px"}}/>
               My profile 
             </a>
           </li>
           <li>
-            <a className="dropdown-item" href="#">
+            <a className="dropdown-item" href="#" style={{display:"flex",alignItems:"center"}}>
+              <FontAwesomeIcon icon={faListDots} style={{marginRight:"13px",color:"gray"}}/>
               My orders
             </a>
           </li>
           <li>
-            <a className="dropdown-item" href="#">
+            <a className="dropdown-item" href="#" style={{display:"flex",alignItems:"center"}}>
+              <FontAwesomeIcon icon={faHeart} style={{marginRight:"13px",color:"red"}}/>
               My wishlist
             </a>
           </li>
           <li>
-            <a className="dropdown-item" href="#" style={{display:"flex",alignItems:"center"}}>
-              <FontAwesomeIcon icon={faArrowRightFromBracket} style={{marginRight:"10px"}}/>
+            <a className="dropdown-item" href="#" style={{display:"flex",alignItems:"center",color:"white",background:"indianred"}}>
+              <FontAwesomeIcon icon={faArrowRightFromBracket} style={{marginRight:"10px",color:"white"}}/>
               Log out
             </a>
           </li>
